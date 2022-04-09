@@ -30,6 +30,7 @@ Primary Pane: `open "x-apple.systempreferences:com.apple.preference.security"`
 `open "x-apple.systempreferences:com.apple.preference.security?Firewall"`
 
 ### Privacy Tab
+`open "x-apple.systempreferences:com.apple.preference.security?Firewall"`
 * Location Services: `open "x-apple.systempreferences:com.apple.preference.security?Privacy_LocationServices"`
 * Contacts: `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Contacts"`
 * Calendars: `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Calendars"`
@@ -40,17 +41,17 @@ Primary Pane: `open "x-apple.systempreferences:com.apple.preference.security"`
 * Speech Recognition: `open "x-apple.systempreferences:com.apple.preference.security?Privacy_SpeechRecognition"`
 * Accessibility: `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Accessibility"`
 * Input Monitoring
-* Full Disk Access
+* Full Disk Access: `open "x-apple.systempreferences:com.apple.preference.security?Privacy_AllFiles"`
 * Files and Folders
 * **Screen Recording:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_ScreenCapture"`
 * Media & Apple Music
-* HomeKit
-* Bluetooth
+* HomeKit: `open "x-apple.systempreferences:com.apple.preference.security?Privacy_HomeKit"`
+* Bluetooth: `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Bluetooth"`
 * User Availability:
-* Automation: 
+* Automation: `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Automation"`
 * Developer Tools: 
 * Analytics & Improvements:
-* Apple Advertising:
+* Apple Advertising: `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Advertising"`
 
 
 ## Finding the keys yourself

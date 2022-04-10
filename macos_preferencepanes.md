@@ -3,18 +3,157 @@
 Here is a complete (as of macOS Monterey 12.2.1) list of System Preference Panes and how to open them with a bash command. Not all panes support a url scheme to open, but you could open with applescript.
 
 ## Apple ID (com.apple.preferences.AppleIDPrefPane)
-Primary Pane: `open "x-apple.systempreferences:com.apple.preferences.AppleIDPrefPane"`
-* Overview
-* iCloud: `open "x-apple.systempreferences:com.apple.preferences.AppleIDPrefPane?iCloud"`
+`open "x-apple.systempreferences:com.apple.preferences.AppleIDPrefPane"`
+
+## Family Sharing (com.apple.preferences.FamilySharingPrefPane)
+`open "x-apple.systempreferences:com.apple.preferences.FamilySharingPrefPane"`
+
+## General
+URLScheme not supported. Applescript alternative below.
+
+```
+tell application "System Preferences"
+	activate
+	set the current pane to pane id "com.apple.preference.general"
+end tell
+```
+Bash-ready version:
+```
+osascript -e 'tell Application "System Preferences"' -e 'activate' -e 'set the current pane to pane id "com.apple.preference.general"' -e 'end tell'
+```
 
 ## Desktop & Screensaver (com.apple.preference.desktopscreeneffect)
-URLScheme note support. You'll have to use applescript if u want to open.
+URLScheme not supported. Applescript alternative below.
 
 ```
 tell application "System Preferences"
 	activate
 	set the current pane to pane id "com.apple.preference.desktopscreeneffect"
 end tell
+```
+Bash-ready version:
+```
+osascript -e 'tell Application "System Preferences"' -e 'activate' -e 'set the current pane to pane id "com.apple.preference.desktopscreeneffect"' -e 'end tell'
+```
+
+## Dock & Menu Bar (com.apple.preference.dock)
+URLScheme not supported. Applescript alternative below.
+
+```
+tell application "System Preferences"
+	activate
+	set the current pane to pane id "com.apple.preference.dock"
+end tell
+```
+Bash-ready version:
+```
+osascript -e 'tell Application "System Preferences"' -e 'activate' -e 'set the current pane to pane id "com.apple.preference.dock"' -e 'end tell'
+```
+
+## Mission Control (com.apple.preference.expose)
+URLScheme not supported. Applescript alternative below.
+
+```
+tell application "System Preferences"
+	activate
+	set the current pane to pane id "com.apple.preference.expose"
+end tell
+```
+Bash-ready version:
+```
+osascript -e 'tell Application "System Preferences"' -e 'activate' -e 'set the current pane to pane id "com.apple.preference.expose"' -e 'end tell'
+```
+
+## Siri (com.apple.preference.speech)
+`open "x-apple.systempreferences:com.apple.preference.speech"`
+
+## Spotlight (com.apple.preference.spotlight)
+URLScheme not supported. Applescript alternative below.
+
+```
+tell application "System Preferences"
+	activate
+	set the current pane to pane id "com.apple.preference.spotlight"
+end tell
+```
+Bash-ready version:
+```
+osascript -e 'tell Application "System Preferences"' -e 'activate' -e 'set the current pane to pane id "com.apple.preference.spotlight"' -e 'end tell'
+```
+
+## Language & Region (com.apple.Localization)
+`open "x-apple.systempreferences:com.apple.Localization"`
+
+## Notifications & Focus (com.apple.preference.notifications)
+Primary Pane: `open "x-apple.systempreferences:com.apple.preference.notifications"`
+### Notifications Tab
+`open "x-apple.systempreferences:com.apple.preference.notifications?Notifications"`
+### Focus Tab
+`open "x-apple.systempreferences:com.apple.preference.notifications?Focus"`
+
+## Internet Accounts (com.apple.preferences.internetaccounts)
+URLScheme not supported. Applescript alternative below.
+
+```
+tell application "System Preferences"
+	activate
+	set the current pane to pane id "com.apple.preferences.internetaccounts"
+end tell
+```
+Bash-ready version:
+```
+osascript -e 'tell Application "System Preferences"' -e 'activate' -e 'set the current pane to pane id "com.apple.preferences.internetaccounts"' -e 'end tell'
+```
+
+## Passwords (com.apple.Passwords)
+URLScheme IS supported, but I couldn't figure it out. Applescript alternative below.
+
+```
+tell application "System Preferences"
+	activate
+	set the current pane to pane id "com.apple.Passwords"
+end tell
+```
+Bash-ready version:
+```
+osascript -e 'tell Application "System Preferences"' -e 'activate' -e 'set the current pane to pane id "com.apple.Passwords"' -e 'end tell'
+```
+
+## Wallet & Apple Pay (com.apple.preferences.wallet)
+`open "x-apple.systempreferences:com.apple.preferences.wallet"`
+
+## Users & Groups (com.apple.preferences.users)
+URLScheme not supported. Applescript alternative below.
+
+```
+tell application "System Preferences"
+	activate
+	set the current pane to pane id "com.apple.preferences.users"
+end tell
+```
+Bash-ready version:
+```
+osascript -e 'tell Application "System Preferences"' -e 'activate' -e 'set the current pane to pane id "com.apple.preferences.users"' -e 'end tell'
+```
+
+## Accessibility (com.apple.preference.universalaccess)
+`open "x-apple.systempreferences:com.apple.preference.universalaccess"``
+
+## Screen Time (com.apple.preference.screentime)
+`open "x-apple.systempreferences:com.apple.preference.screentime"`
+
+## Extensions (com.apple.preferences.extensions)
+URLScheme not supported. Applescript alternative below.
+
+```
+tell application "System Preferences"
+	activate
+	set the current pane to pane id "com.apple.preferences.extensions"
+end tell
+```
+Bash-ready version:
+```
+osascript -e 'tell Application "System Preferences"' -e 'activate' -e 'set the current pane to pane id "com.apple.preferences.extensions"' -e 'end tell'
 ```
 
 ## Security & Privacy (com.apple.preference.security)
@@ -49,14 +188,188 @@ If you want to prompt the user to unlock any of the panes for editing, you can d
 * **HomeKit:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_HomeKit"`
 * **Bluetooth:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Bluetooth"`
 * User Availability:
-* Automation: `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Automation"`
-* Developer Tools: `open "x-apple.systempreferences:com.apple.preference.security?Privacy_DevTools"`
+* **Automation:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Automation"`
+* **Developer Tools:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_DevTools"`
 * Analytics & Improvements:
-* Apple Advertising: `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Advertising"`
+* **Apple Advertising:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Advertising"`
 
+## Software Update (com.apple.preferences.softwareupdate)
+`open "x-apple.systempreferences:com.apple.preferences.softwareupdate"`
 
-## Finding the keys yourself
-Let's say you come across this file, I haven't updated it, and a new version of macOS has come out that adds new System Preferences panes or changes the names of existing ones. How do you discover where they are? I'm glad you asked.
+## Network (com.apple.preference.network)
+URLScheme not supported. Applescript alternative below.
+
+```
+tell application "System Preferences"
+	activate
+	set the current pane to pane id "com.apple.preference.network"
+end tell
+```
+Bash-ready version:
+```
+osascript -e 'tell Application "System Preferences"' -e 'activate' -e 'set the current pane to pane id "com.apple.preference.network"' -e 'end tell'
+```
+
+## Bluetooth (com.apple.preferences.Bluetooth)
+URLScheme not supported. Applescript alternative below.
+
+```
+tell application "System Preferences"
+	activate
+	set the current pane to pane id "com.apple.preferences.Bluetooth"
+end tell
+```
+Bash-ready version:
+```
+osascript -e 'tell Application "System Preferences"' -e 'activate' -e 'set the current pane to pane id "com.apple.preferences.Bluetooth"' -e 'end tell'
+```
+
+## Sound (com.apple.preference.sound)
+URLScheme not supported. Applescript alternative below.
+
+```
+tell application "System Preferences"
+	activate
+	set the current pane to pane id "com.apple.preference.sound"
+end tell
+```
+Bash-ready version:
+```
+osascript -e 'tell Application "System Preferences"' -e 'activate' -e 'set the current pane to pane id "com.apple.preference.sound"' -e 'end tell'
+```
+
+## Touch ID (com.apple.preferences.password)
+`open "x-apple.systempreferences:com.apple.preferences.password"`
+
+## Keyboard (com.apple.preference.keyboard)
+URLScheme not supported. Applescript alternative below.
+
+```
+tell application "System Preferences"
+	activate
+	set the current pane to pane id "com.apple.preference.keyboard"
+end tell
+```
+Bash-ready version:
+```
+osascript -e 'tell Application "System Preferences"' -e 'activate' -e 'set the current pane to pane id "com.apple.preference.keyboard"' -e 'end tell'
+```
+
+## Trackpad (com.apple.preference.trackpad)
+URLScheme not supported. Applescript alternative below.
+
+```
+tell application "System Preferences"
+	activate
+	set the current pane to pane id "com.apple.preference.trackpad"
+end tell
+```
+Bash-ready version:
+```
+osascript -e 'tell Application "System Preferences"' -e 'activate' -e 'set the current pane to pane id "com.apple.preference.trackpad"' -e 'end tell'
+```
+
+## Mouse (com.apple.preference.mouse)
+URLScheme not supported. Applescript alternative below.
+
+```
+tell application "System Preferences"
+	activate
+	set the current pane to pane id "com.apple.preference.mouse"
+end tell
+```
+Bash-ready version:
+```
+osascript -e 'tell Application "System Preferences"' -e 'activate' -e 'set the current pane to pane id "com.apple.preference.mouse"' -e 'end tell'
+```
+
+## Displays (com.apple.preference.displays)
+URLScheme not supported. Applescript alternative below.
+
+```
+tell application "System Preferences"
+	activate
+	set the current pane to pane id "com.apple.preference.displays"
+end tell
+```
+Bash-ready version:
+```
+osascript -e 'tell Application "System Preferences"' -e 'activate' -e 'set the current pane to pane id "com.apple.preference.displays"' -e 'end tell'
+```
+
+## Printers & Scanners (com.apple.preference.printfax)
+URLScheme not supported. Applescript alternative below.
+
+```
+tell application "System Preferences"
+	activate
+	set the current pane to pane id "com.apple.preference.printfax"
+end tell
+```
+Bash-ready version:
+```
+osascript -e 'tell Application "System Preferences"' -e 'activate' -e 'set the current pane to pane id "com.apple.preference.printfax"' -e 'end tell'
+```
+
+## Battery (com.apple.preference.battery)
+Primary Pane: `open "x-apple.systempreferences:com.apple.preference.battery"`
+
+* Usage History: `open "x-apple.systempreferences:com.apple.preference.battery?usage"`
+* Battery: `open "x-apple.systempreferences:com.apple.preference.battery?battery"`
+* Power Adapter: `open "x-apple.systempreferences:com.apple.preference.battery?adapter"`
+* Schedule: `open "x-apple.systempreferences:com.apple.preference.battery?schedule"`
+* Current Source (Either Battery or Power Adapter depending on current sournce): `open "x-apple.systempreferences:com.apple.preference.battery?currentSource"`
+
+## Date & Time (com.apple.preference.datetime)
+URLScheme not supported. Applescript alternative below.
+
+```
+tell application "System Preferences"
+	activate
+	set the current pane to pane id "com.apple.preference.datetime"
+end tell
+```
+Bash-ready version:
+```
+osascript -e 'tell Application "System Preferences"' -e 'activate' -e 'set the current pane to pane id "com.apple.preference.datetime"' -e 'end tell'
+```
+
+## Sharing (com.apple.preferences.sharing)
+`open "x-apple.systempreferences:com.apple.preferences.sharing"`
+
+## Time Machine (com.apple.prefs.backup)
+URLScheme not supported. Applescript alternative below.
+
+```
+tell application "System Preferences"
+	activate
+	set the current pane to pane id "com.apple.prefs.backup"
+end tell
+```
+Bash-ready version:
+```
+osascript -e 'tell Application "System Preferences"' -e 'activate' -e 'set the current pane to pane id "com.apple.prefs.backup"' -e 'end tell'
+```
+
+## Startup Disk (com.apple.preference.startupdisk)
+URLScheme not supported. Applescript alternative below.
+
+```
+tell application "System Preferences"
+	activate
+	set the current pane to pane id "com.apple.preference.startupdisk"
+end tell
+```
+Bash-ready version:
+```
+osascript -e 'tell Application "System Preferences"' -e 'activate' -e 'set the current pane to pane id "com.apple.preference.startupdisk"' -e 'end tell'
+```
+
+## Profiles
+`open "x-apple.systempreferences:com.apple.preferences.configurationprofiles"`
+
+# Finding the keys yourself
+Let's say you come across this file, I haven't updated it, and a new version of macOS has come out that adds new System Preference panes or changes the names of existing ones. How do you discover where they are? I'm glad you asked.
 
 ### Identifying pane names and anchors
 You can find the pane and associated deeplink anchors with some applescript:
@@ -86,7 +399,7 @@ Interestingly, this doesn't capture ALL anchors that you can deeplink to. If you
 
 ### Identifying if the pane supports URLScheme.
 
-Not all Preference Panes support URLScheme. For those that don't, you can accomplish the same actions of opening the pane with Applescript in most instances. But how do you know if a specific pane supports a URLScheme? Let's dive in!
+Not all Preference Panes support URLScheme. For those that don't, you can accomplish the same action of opening the pane with Applescript in most instances. But how do you know if a specific pane supports a URLScheme? Let's dive in!
 
 Most of the preference panes themselves are located within `/System/Library/PreferencePanes/`.
 

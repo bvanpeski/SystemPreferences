@@ -1,6 +1,20 @@
-# Every macOS System Preference Pane
+# How to open every macOS System Preferences Pane
 
-Here is a complete (as of macOS Monterey 12.2.1) list of System Preference Panes and how to open them with a bash command. Not all panes support a url scheme to open, but you could open with applescript.
+Here is a complete list of System Preferences Panes (as of macOS Monterey 12.2.1) and how to open them with a bash command. Not all panes support a url scheme to open, but for those that do not you can use Applescript.
+
+### Table of Contents
+
+**Preference Panes**
+* [AppleID](#apple-id-comapplepreferencesappleidprefpane) | [Family Sharing](#family-sharing-comapplepreferencesfamilysharingprefpane)
+* [General](#general-comapplepreferencegeneral) | [Desktop & Screen Saver](#desktop--screensaver-comapplepreferencedesktopscreeneffect) | [Dock & Menu Bar](#dock--menu-bar-comapplepreferencedock) | [Mission Control](#mission-control-comapplepreferenceexpose) | [Siri](#siri-comapplepreferencespeech) | [Spotlight](#spotlight-comapplepreferencespotlight) | [Language & Region](#language--region-comapplelocalization) | [Notifications & Focus](#notifications--focus-comapplepreferencenotifications)
+* [Internet Accounts](#internet-accounts-comapplepreferencesinternetaccounts) | [Passwords](#passwords-comapplepasswords) | [Wallet & Apply Pay](#wallet--apple-pay-comapplepreferenceswallet) | [Users & Groups](#users--groups-comapplepreferencesusers) | [Accessibility](#accessibility-comapplepreferenceuniversalaccess) | [Screen Time](#screen-time-comapplepreferencescreentime) | [Extensions](#extensions-comapplepreferencesextensions) | [Security & Privacy](#security--privacy-comapplepreferencesecurity)
+* [Software Update](#software-update-comapplepreferencessoftwareupdate) | [Network](#network-comapplepreferencenetwork) | [Bluetooth](#bluetooth-comapplepreferencesbluetooth) | [Sound](#sound-comapplepreferencesound) | [Touch ID](#touch-id-comapplepreferencespassword) | [Keyboard](#keyboard-comapplepreferencekeyboard) | [Trackpad](#trackpad-comapplepreferencetrackpad) | [Mouse](#mouse-comapplepreferencemouse)
+* [Displays](#displays-comapplepreferencedisplays) | [Printers & Scanners](#printers--scanners-comapplepreferenceprintfax) | [Battery](#battery-comapplepreferencebattery) | [Date & Time](#date--time-comapplepreferencedatetime) | [Sharing](#sharing-comapplepreferencessharing) | [Time Machine](#time-machine-comappleprefsbackup) | [Startup Disk](#startup-disk-comapplepreferencestartupdisk) | [Profiles](#profiles-comapplepreferencesconfigurationprofiles)
+
+
+**How To**
+* [How to find panes yourself](#finding-pane-ids-and-anchors)
+* [Troubleshooting](#troubleshooting)
 
 ## Apple ID (com.apple.preferences.AppleIDPrefPane)
 `open "x-apple.systempreferences:com.apple.preferences.AppleIDPrefPane"`
@@ -8,7 +22,7 @@ Here is a complete (as of macOS Monterey 12.2.1) list of System Preference Panes
 ## Family Sharing (com.apple.preferences.FamilySharingPrefPane)
 `open "x-apple.systempreferences:com.apple.preferences.FamilySharingPrefPane"`
 
-## General
+## General (com.apple.preference.general)
 URLScheme not supported. Applescript alternative below.
 
 ```
@@ -137,7 +151,7 @@ osascript -e 'tell Application "System Preferences"' -e 'activate' -e 'set the c
 ```
 
 ## Accessibility (com.apple.preference.universalaccess)
-`open "x-apple.systempreferences:com.apple.preference.universalaccess"``
+`open "x-apple.systempreferences:com.apple.preference.universalaccess"`
 
 ## Screen Time (com.apple.preference.screentime)
 `open "x-apple.systempreferences:com.apple.preference.screentime"`
@@ -314,11 +328,11 @@ osascript -e 'tell Application "System Preferences"' -e 'activate' -e 'set the c
 ## Battery (com.apple.preference.battery)
 Primary Pane: `open "x-apple.systempreferences:com.apple.preference.battery"`
 
-* Usage History: `open "x-apple.systempreferences:com.apple.preference.battery?usage"`
-* Battery: `open "x-apple.systempreferences:com.apple.preference.battery?battery"`
-* Power Adapter: `open "x-apple.systempreferences:com.apple.preference.battery?adapter"`
-* Schedule: `open "x-apple.systempreferences:com.apple.preference.battery?schedule"`
-* Current Source (Either Battery or Power Adapter depending on current sournce): `open "x-apple.systempreferences:com.apple.preference.battery?currentSource"`
+* **Usage History:** `open "x-apple.systempreferences:com.apple.preference.battery?usage"`
+* **Battery:** `open "x-apple.systempreferences:com.apple.preference.battery?battery"`
+* **Power Adapter:** `open "x-apple.systempreferences:com.apple.preference.battery?adapter"`
+* **Schedule:** `open "x-apple.systempreferences:com.apple.preference.battery?schedule"`
+* **Current Source (Either Battery or Power Adapter depending on current sournce):** `open "x-apple.systempreferences:com.apple.preference.battery?currentSource"`
 
 ## Date & Time (com.apple.preference.datetime)
 URLScheme not supported. Applescript alternative below.
@@ -365,10 +379,11 @@ Bash-ready version:
 osascript -e 'tell Application "System Preferences"' -e 'activate' -e 'set the current pane to pane id "com.apple.preference.startupdisk"' -e 'end tell'
 ```
 
-## Profiles
+## Profiles (com.apple.preferences.configurationprofiles)
 `open "x-apple.systempreferences:com.apple.preferences.configurationprofiles"`
 
-# Finding the keys yourself
+
+# Finding Pane IDs and Anchors
 Let's say you come across this file, I haven't updated it, and a new version of macOS has come out that adds new System Preference panes or changes the names of existing ones. How do you discover where they are? I'm glad you asked.
 
 ### Identifying pane names and anchors
@@ -392,7 +407,7 @@ You'll get an output like this:
 <img width="673" alt="image" src="https://user-images.githubusercontent.com/4316081/162593255-d4cfb7e6-3b19-451d-a32f-991179d8bc06.png">
 
 
-Interestingly, this doesn't capture ALL anchors that you can deeplink to. If you find some missing, you may want to dig into the preference pane itself and see if there's any bits of code that reference available options. For example, the script above when run against the Security & Privacy Pane doesn't return any options for the `Input Monitoring` section. However, I can open `/System/Library/PreferencePanes/Security.prefPane/Contents/Resources/PrivacyTCCServices.plist`and see the key i'm looking for is `ListenEvent`
+Interestingly, this doesn't capture ALL anchors that you can deeplink to. If you find some missing, you may want to dig into the preference pane itself and see if there's any bits of code that reference available options. For example, the script above when run against the Security & Privacy Pane doesn't return any options for the `Input Monitoring` section. However, I can open `/System/Library/PreferencePanes/Security.prefPane/Contents/Resources/PrivacyTCCServices.plist`and see the key value i'm looking for is `ListenEvent`
 
 <img width="600" alt="image" src="https://user-images.githubusercontent.com/4316081/162593163-85d9ae7d-2b24-4ba0-a71a-93898c804708.png">
 
@@ -413,7 +428,6 @@ Here's how to find if the pane supports url schemes:
 
 If the pane DOES support a url scheme, then you can use the `open` command + URLschemes listed above. If it does not, and you still want to open the pane via script, you could do so using Applescript.
 
-# Reference
-https://apple.stackexchange.com/questions/365857/create-system-preferences-url-to-privacy-files-and-folders-in-10-15-catalina
-https://levelup.gitconnected.com/tooling-to-explore-applescript-part-2-ed44f511fcb5
-https://macosxautomation.com/applescript/features/system-prefs.html
+## Troubleshooting
+* Note that some panes start with `com.apple.preference.` and some start with `com.apple.preferences.`, why is that? I have no clue, but don't let it trip you up if you're hunting and guessing at panes.
+* This documentation is for macOS Monterey. You may have limited success with older operating systems depending on how much System Preferences has changed betweeb operating system versions.

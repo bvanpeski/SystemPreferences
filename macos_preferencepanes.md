@@ -16,6 +16,9 @@ Here is a complete list of System Preferences Panes (as of macOS Monterey 12.2.1
 * [How to find panes yourself](#finding-pane-ids-and-anchors)
 * [Troubleshooting](#troubleshooting)
 
+## System Preferences (com.apple.preferences)
+`open "x-apple.systempreferences:com.apple.preferences"`
+
 ## Apple ID (com.apple.preferences.AppleIDPrefPane)
 `open "x-apple.systempreferences:com.apple.preferences.AppleIDPrefPane"`
 

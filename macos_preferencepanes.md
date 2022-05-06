@@ -186,7 +186,6 @@ Primary Pane: `open "x-apple.systempreferences:com.apple.preference.security"`
 `open "x-apple.systempreferences:com.apple.preference.security?Firewall"`
 
 ### Privacy Tab
-`open "x-apple.systempreferences:com.apple.preference.security?Firewall"`
 If you want to prompt the user to unlock any of the panes for editing, you can do so using `open "x-apple.systempreferences:com.apple.preference.security?Advanced"`
 * **Location Services:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_LocationServices"`
 * **Contacts:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Contacts"`
@@ -410,16 +409,16 @@ You'll get an output like this:
 <img width="673" alt="image" src="https://user-images.githubusercontent.com/4316081/162593255-d4cfb7e6-3b19-451d-a32f-991179d8bc06.png">
 
 
-Interestingly, this doesn't capture ALL anchors that you can deeplink to. If you find some missing, you may want to dig into the preference pane itself and see if there's any bits of code that reference available options. For example, the script above when run against the Security & Privacy Pane doesn't return any options for the `Input Monitoring` section. However, I can open `/System/Library/PreferencePanes/Security.prefPane/Contents/Resources/PrivacyTCCServices.plist`and see the key value i'm looking for is `ListenEvent`
+Interestingly, this doesn't capture ALL anchors that you can deeplink to. If you find some missing, you may want to dig into the preference pane itself and see if there's any bits of code that reference other available options that we can't identify as an achor. For example, the script above when run against the Security & Privacy Pane doesn't return any options for the `Input Monitoring` section. However, I can open `/System/Library/PreferencePanes/Security.prefPane/Contents/Resources/PrivacyTCCServices.plist`and see the key value I might be looking for is probably `ListenEvent`
 
 <img width="600" alt="image" src="https://user-images.githubusercontent.com/4316081/162593163-85d9ae7d-2b24-4ba0-a71a-93898c804708.png">
 
 
 ### Identifying if the pane supports URLScheme.
 
-Not all Preference Panes support URLScheme. For those that don't, you can accomplish the same action of opening the pane with Applescript in most instances. But how do you know if a specific pane supports a URLScheme? Let's dive in!
+Not all System Preference Panes support URLScheme. For those that don't, you can accomplish the same action of opening the pane with Applescript in most instances. But how do you know if a specific pane supports a URLScheme? Let's dive in!
 
-Most of the preference panes themselves are located within `/System/Library/PreferencePanes/`.
+Most of the System Preferences panes themselves are located within `/System/Library/PreferencePanes/`.
 
 Here's how to find if the pane supports url schemes:
 1. Open Finder and Go To `/System/Library/PreferencePanes`
@@ -433,4 +432,4 @@ If the pane DOES support a url scheme, then you can use the `open` command + URL
 
 ## Troubleshooting
 * Note that some panes start with `com.apple.preference.` and some start with `com.apple.preferences.`, why is that? I have no clue, but don't let it trip you up if you're hunting and guessing at panes.
-* This documentation is for macOS Monterey. You may have limited success with older operating systems depending on how much System Preferences has changed betweeb operating system versions.
+* This documentation is for macOS Monterey. You may have limited success with older operating systems depending on how much System Preferences has changed between operating system versions and if those panes previously supported URLScheme or not.

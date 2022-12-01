@@ -88,8 +88,8 @@ Primary window: `open x-apple.systempreferences:com.apple.systempreferences.Gene
 ## Accessibility
 Primary section:`open x-apple.systempreferences:com.apple.Accessibility-Settings.extension`
 * **Voice Over:** `open "x-apple.systempreferences:com.apple.preference.universalaccess?Seeing_VoiceOver"`
-* **Zoom:** `open "x-apple.systempreferences:com.apple.preference.universalaccess?Zoom"'
-* **Display:** `open "x-apple.systempreferences:com.apple.preference.universalaccess?Seeing_Display"'
+* **Zoom:** `open "x-apple.systempreferences:com.apple.preference.universalaccess?Zoom"`
+* **Display:** `open "x-apple.systempreferences:com.apple.preference.universalaccess?Seeing_Display"`
 * **Spoken Content:** `open "x-apple.systempreferences:com.apple.preference.universalaccess?SpokenContent"`
 * **Descriptions:** `open "x-apple.systempreferences:com.apple.preference.universalaccess?Descriptions"`
 * **Audio:** `open "x-apple.systempreferences:com.apple.preference.universalaccess?Audio"`

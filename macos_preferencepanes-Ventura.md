@@ -23,12 +23,12 @@ For the macOS Monterey version of this list, check that out [here](https://githu
 * [Troubleshooting](#troubleshooting)
 
 ## System Preferences
-`open "x-apple.systempreferences:com.apple.preferences"`
+`open x-apple.systempreferences:com.apple.preferences`
 
 ## Apple ID
 `open x-apple.systempreferences:com.apple.systempreferences.AppleIDSettings`
 
-`open "x-apple.systempreferences:com.apple.preferences.AppleIDPrefPane"` (legacy)
+`open x-apple.systempreferences:com.apple.preferences.AppleIDPrefPane` (legacy)
 
 ## Family
 `open x-apple.systempreferences:com.apple.Family-Settings.extension`
@@ -39,7 +39,7 @@ For the macOS Monterey version of this list, check that out [here](https://githu
 ## Bluetooth
 `open x-apple.systempreferences:com.apple.BluetoothSettings`
 
-`open "x-apple.systempreferences:com.apple.preferences.Bluetooth"` (legacy)
+`open x-apple.systempreferences:com.apple.preferences.Bluetooth` (legacy)
 
 ## Network
 `open x-apple.systempreferences:com.apple.Network-Settings.extension`
@@ -51,20 +51,20 @@ For the macOS Monterey version of this list, check that out [here](https://githu
 ## Notifications
 `open x-apple.systempreferences:com.apple.Notifications-Settings.extension`
 
-`open "x-apple.systempreferences:com.apple.preference.notifications"` (legacy)
+`open x-apple.systempreferences:com.apple.preference.notifications` (legacy)
 
 ## Sound
 `open x-apple.systempreferences:com.apple.Sound-Settings.extension`
 
-`open "x-apple.systempreferences:com.apple.preference.sound"` (legacy)
+`open x-apple.systempreferences:com.apple.preference.sound` (legacy)
 
 ## Focus
 `open x-apple.systempreferences:com.apple.Focus-Settings.extension`
 
 ## Screen Time
-`x-apple.systempreferences:com.apple.Screen-Time-Settings.extension`
+`open x-apple.systempreferences:com.apple.Screen-Time-Settings.extension`
 
-`open "x-apple.systempreferences:com.apple.preference.screentime"` (legacy)
+`open x-apple.systempreferences:com.apple.preference.screentime` (legacy)
 
 <br>
 
@@ -107,7 +107,7 @@ Primary section:`open x-apple.systempreferences:com.apple.Accessibility-Settings
 ## Siri & Spotlight
 `open x-apple.systempreferences:com.apple.Siri-Settings.extension`
 
-`open "x-apple.systempreferences:com.apple.preference.speech"` (legacy)
+`open x-apple.systempreferences:com.apple.preference.speech` (legacy)
 
 ## Privacy & Security
 Primary window: `open x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension`
@@ -163,7 +163,7 @@ If you want to prompt the user to unlock any of the panes for editing, you can d
 <br>
 
 ## Lock Screen
-`open "x-apple.systempreferences:com.apple.Lock-Screen-Settings.extension"`
+`open x-apple.systempreferences:com.apple.Lock-Screen-Settings.extension`
 
 ## Touch ID & Password
 `open x-apple.systempreferences:com.apple.Touch-ID-Settings.extension`
@@ -185,7 +185,7 @@ If you want to prompt the user to unlock any of the panes for editing, you can d
 ## Internet Accounts
 `open x-apple.systempreferences:com.apple.Internet-Accounts-Settings.extension`
 
-`open "x-apple.systempreferences:com.apple.preferences.internetaccounts"` (legacy)
+`open x-apple.systempreferences:com.apple.preferences.internetaccounts` (legacy)
 
 ## Game Center
 `open x-apple.systempreferences:com.apple.Game-Center-Settings.extension`
@@ -205,7 +205,7 @@ If you want to prompt the user to unlock any of the panes for editing, you can d
 `open x-apple.systempreferences:com.apple.Mouse-Settings.extension`
 
 ## Printers & Scanners
-`open "x-apple.systempreferences:com.apple.Print-Scan-Settings.extension"`
+`open x-apple.systempreferences:com.apple.Print-Scan-Settings.extension`
 
 <br>
 

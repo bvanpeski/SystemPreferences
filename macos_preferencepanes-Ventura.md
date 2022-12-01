@@ -1,30 +1,172 @@
-# How to open every macOS System Preferences Pane
+# How to open every macOS System Settings Section (Ventura)
 
-Here is a complete list of System Preferences Panes (as of macOS Monterey 12.2.1) and how to open them with a bash command. Not all panes support a url scheme to open, but for those that do not you can use Applescript.
+Here is a complete list of System Settings Section (as of macOS Ventura 13.0.1) and how to open them with a bash command. Not all panes support a url scheme to open, but for those that do not you can use Applescript.
+
+Ventura uses a new extension framework, but still supports some of the older prefpane calls. Who knows how long those will continue to work, but I've listed them here if a more modern alternative doesn't exist yet.
+
+For macOS Monterey version of this list, check that out [here](https://github.com/bvanpeski/SystemPreferences/blob/main/macos_preferencepanes.md).
 
 ### Table of Contents
 
-**Preference Panes**
-* [AppleID](#apple-id-comapplepreferencesappleidprefpane) | [Family Sharing](#family-sharing-comapplepreferencesfamilysharingprefpane)
-* [General](#general-comapplepreferencegeneral) | [Desktop & Screen Saver](#desktop--screensaver-comapplepreferencedesktopscreeneffect) | [Dock & Menu Bar](#dock--menu-bar-comapplepreferencedock) | [Mission Control](#mission-control-comapplepreferenceexpose) | [Siri](#siri-comapplepreferencespeech) | [Spotlight](#spotlight-comapplepreferencespotlight) | [Language & Region](#language--region-comapplelocalization) | [Notifications & Focus](#notifications--focus-comapplepreferencenotifications)
-* [Internet Accounts](#internet-accounts-comapplepreferencesinternetaccounts) | [Passwords](#passwords-comapplepasswords) | [Wallet & Apply Pay](#wallet--apple-pay-comapplepreferenceswallet) | [Users & Groups](#users--groups-comapplepreferencesusers) | [Accessibility](#accessibility-comapplepreferenceuniversalaccess) | [Screen Time](#screen-time-comapplepreferencescreentime) | [Extensions](#extensions-comapplepreferencesextensions) | [Security & Privacy](#security--privacy-comapplepreferencesecurity)
-* [Software Update](#software-update-comapplepreferencessoftwareupdate) | [Network](#network-comapplepreferencenetwork) | [Bluetooth](#bluetooth-comapplepreferencesbluetooth) | [Sound](#sound-comapplepreferencesound) | [Touch ID](#touch-id-comapplepreferencespassword) | [Keyboard](#keyboard-comapplepreferencekeyboard) | [Trackpad](#trackpad-comapplepreferencetrackpad) | [Mouse](#mouse-comapplepreferencemouse)
-* [Displays](#displays-comapplepreferencedisplays) | [Printers & Scanners](#printers--scanners-comapplepreferenceprintfax) | [Battery](#battery-comapplepreferencebattery) | [Date & Time](#date--time-comapplepreferencedatetime) | [Sharing](#sharing-comapplepreferencessharing) | [Time Machine](#time-machine-comappleprefsbackup) | [Startup Disk](#startup-disk-comapplepreferencestartupdisk) | [Profiles](#profiles-comapplepreferencesconfigurationprofiles)
-
+**System Settings Sections**
+* [AppleID](#apple-id)
+* [Wi-Fi](#wi-fi) | [Bluetooth](#bluetooth) | [Network](#network)
+* [Notifications](#notifications) | [Sound](#sound) | [Focus](#focus) | [Screen Time](#screen-time)
+* [General](#general) | [Appearance](#appearance) | [Accessibility](#accessibility) | [Control Center](#control-center) | [Siri & Spotlight](s#iri--spotlight) | [Privacy & Security](#privacy--security)
+* [Desktop & Dock](#desktop--dock) | [Displays](#displays) | [Wallpaper](#wallpaper) | [Screen Saver](#screen-saver) | [Battery](#battery)
+* [Lock Screen](#lock-screen) | [Touch ID & Password](#touch-id--password) | [Users & Groups](#users--groups)
+* [Passwords](#passwords) | [Internet Accounts](#internet-accounts) | [Game Center](#game-center) | [Wallet & Apple Pay](#wallet--apple-pay)
+* [Keyboard](#keyboard) | [Trackpad](#trackpad) | [Printers & Scanners](#printers--scanners)
 
 **How To**
 * [How to find panes yourself](#finding-pane-ids-and-anchors)
 * [Troubleshooting](#troubleshooting)
 
-## System Preferences (com.apple.preferences)
+## System Preferences
 `open "x-apple.systempreferences:com.apple.preferences"`
 
-## Apple ID (com.apple.preferences.AppleIDPrefPane)
-`open "x-apple.systempreferences:com.apple.preferences.AppleIDPrefPane"`
+## Apple ID
+`open "x-apple.systempreferences:com.apple.preferences.AppleIDPrefPane"` (legacy)
 
-## Family Sharing (com.apple.preferences.FamilySharingPrefPane)
-`open "x-apple.systempreferences:com.apple.preferences.FamilySharingPrefPane"`
+## Wi-Fi
 
+## Bluetooth
+
+## Network
+`open x-apple.systempreferences:com.apple.preference.network`
+`open x-apple.systempreferences:com.apple.Network-Settings.extension`
+
+<br>
+
+## Notifications
+`open x-apple.systempreferences:com.apple.Notifications-Settings.extension`
+`open "x-apple.systempreferences:com.apple.preference.notifications"` (legacy)
+
+## Sound
+`open x-apple.systempreferences:com.apple.Sound-Settings.extension`
+
+## Focus
+`open x-apple.systempreferences:com.apple.Focus-Settings.extension`
+
+## Screen Time
+`open "x-apple.systempreferences:com.apple.preference.screentime"`
+
+<br>
+
+## General
+`open x-apple.systempreferences:com.apple.systempreferences.GeneralSettings`
+* **About:** `open x-apple.systempreferences:com.apple.SystemProfiler.AboutExtension`
+* **Software Update:** `open x-apple.systempreferences:com.apple.Software-Update-Settings.extension`
+* **Storage:** `open x-apple.systempreferences:com.apple.settings.Storage`
+* **AirDrop & Handoff:** `open x-apple.systempreferences:com.apple.AirDrop-Handoff-Settings.extension`
+* **Login Items:** `open x-apple.systempreferences:com.apple.LoginItems-Settings.extension`
+* **Language & Region:** `open x-apple.systempreferences:com.apple.Localization-Settings.extension`
+* **Date & Time:** `open x-apple.systempreferences:com.apple.Date-Time-Settings.extension`
+* **Sharing:** `open x-apple.systempreferences:com.apple.Sharing-Settings.extension`
+* **Time Machine:** `open x-apple.systempreferences:com.apple.Time-Machine-Settings.extension`
+* **Transfer or Reset:** `open x-apple.systempreferences:com.apple.Transfer-Reset-Settings.extension`
+* **Startup Disk:** `open x-apple.systempreferences:com.apple.preference.startupdisk` or `open x-apple.systempreferences:com.apple.Startup-Disk-Settings.extension`
+
+## Appearance
+`open x-apple.systempreferences:com.apple.Appearance-Settings.extension`
+
+## Accessibility
+`open "x-apple.systempreferences:com.apple.preference.universalaccess"`
+
+## Control Center
+`open x-apple.systempreferences:com.apple.ControlCenter-Settings.extension`
+
+## Siri & Spotlight
+`open "x-apple.systempreferences:com.apple.preference.speech"`
+
+## Privacy & Security
+Primary window: `open x-apple.systempreferences:com.apple.preference.security`
+`open x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension`
+If you want to prompt the user to unlock any of the panes for editing, you can do so using `open "x-apple.systempreferences:com.apple.preference.security?Advanced"`
+* **Location Services:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_LocationServices"`
+* **Contacts:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Contacts"`
+* **Calendars**: `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Calendars"`
+* **Reminders:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Reminders"`
+* **Photos:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Photos"`
+* **Bluetooth:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Bluetooth"`
+* **Microphone:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Microphone"`
+* **Camera:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Camera"`
+* **HomeKit:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_HomeKit"`
+* **Speech Recognition:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_SpeechRecognition"`
+* **Media & Apple Music:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Media" `
+* Files and Folders: 
+* **Full Disk Access:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_AllFiles"`
+* Focus:
+* **Accessibility:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Accessibility"`
+* **Input Monitoring:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_ListenEvent"`
+* **Screen Recording:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_ScreenCapture"`
+* **Automation:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Automation"`
+* App Management:
+* **Developer Tools:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_DevTools"`
+* Analytics & Improvements:
+* **Apple Advertising:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Advertising"`
+* Extensions:
+* **Profiles:** `open x-apple.systempreferences:com.apple.Profiles-Settings.extension` OR `open “x-apple.systempreferences:com.apple.preferences.configurationprofiles”` (legacy)
+
+<br>
+
+## Desktop & Dock
+`open x-apple.systempreferences:com.apple.Desktop-Settings.extension`
+
+## Displays
+`open x-apple.systempreferences:com.apple.preference.displays`
+
+## Wallpaper
+`open x-apple.systempreferences:com.apple.Wallpaper-Settings.extension`
+
+## Screen Saver
+`open x-apple.systempreferences:com.apple.ScreenSaver-Settings.extension`
+
+## Battery
+`open x-apple.systempreferences:com.apple.Battery-Settings.extension`
+
+## Energy Saver
+
+<br>
+
+## Lock Screen
+
+## Touch ID & Password
+Note: This section will be called **Login Password** on non-touch capable devices
+`open x-apple.systempreferences:com.apple.Touch-ID-Settings.extension`
+
+## Users & Groups
+`open x-apple.systempreferences:com.apple.preferences.users`
+
+<br>
+
+## Passwords
+``open x-apple.systempreferences:com.apple.Passwords-Settings.extension``
+
+## Internet Accounts
+
+## Game Center
+
+## Wallet & Apple Pay
+
+<br>
+
+## Keyboard
+`open x-apple.systempreferences:com.apple.Keyboard-Settings.extension`
+
+## Trackpad
+`open x-apple.systempreferences:com.apple.Trackpad-Settings.extension`
+
+## Mouse
+`open x-apple.systempreferences:com.apple.Mouse-Settings.extension`
+
+## Printers & Scanners
+
+
+
+
++++++++++=======================++++++++++++++++++++
++++++++++=======================++++++++++++++++++++
 ## General (com.apple.preference.general)
 URLScheme not supported. Applescript alternative below.
 
@@ -178,6 +320,7 @@ Primary Pane: `open "x-apple.systempreferences:com.apple.preference.security"`
 
 ### General Tab
 `open "x-apple.systempreferences:com.apple.preference.security?General"`
+`open 'x-apple.systempreferences:com.apple.SystemProfiler.AboutExtension'`
 
 ### FileVault Tab
 `open "x-apple.systempreferences:com.apple.preference.security?FDE"`
@@ -237,7 +380,7 @@ end tell
 ```
 Bash-ready version:
 ```
-osascript -e 'tell Application "System Preferences"' -e 'activate' -e 'set the current pane to pane id "com.apple.preferences.Bluetooth"' -e 'end tell'
+osascript -e 'tell Application "System Settings"' -e 'activate' -e 'set the current pane to pane id "com.apple.preferences.Bluetooth"' -e 'end tell'
 ```
 
 ## Sound (com.apple.preference.sound)
@@ -431,5 +574,6 @@ Here's how to find if the pane supports url schemes:
 If the pane DOES support a url scheme, then you can use the `open` command + URLschemes listed above. If it does not, and you still want to open the pane via script, you could do so using Applescript.
 
 ## Troubleshooting
+* If the command does not open the window to the foreground, I believe this was a bug that should have been resolved in macOS 13.0.1
 * Note that some panes start with `com.apple.preference.` and some start with `com.apple.preferences.`, why is that? I have no clue, but don't let it trip you up if you're hunting and guessing at panes.
 * This documentation is for macOS Monterey. You may have limited success with older operating systems depending on how much System Preferences has changed between operating system versions and if those panes previously supported URLScheme or not.

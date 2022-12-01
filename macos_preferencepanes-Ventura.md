@@ -1,10 +1,10 @@
 # How to open every macOS System Settings Section (Ventura)
 
-Here is a complete list of System Settings Section (as of macOS Ventura 13.0.1) and how to open them with a bash command. Not all panes support a url scheme to open, but for those that do not you can use Applescript.
+Here is a complete list of System Settings Section (as of macOS Ventura 13.0.1) and how to open them with a bash command.
 
-Ventura uses a new extension framework, but still supports some of the older prefpane calls. Who knows how long those will continue to work, but I've listed them here if a more modern alternative doesn't exist yet. Any legacy calls that still work I've also listed.
+Ventura uses a new extension framework, but still supports some of the older prefpane calls. Who knows how long those will continue to work, but I've listed them here alongside their more modern counterparts to help identify calls you can use that might work across both Ventura AND Monterey if you have a mixed fleet.
 
-For macOS Monterey version of this list, check that out [here](https://github.com/bvanpeski/SystemPreferences/blob/main/macos_preferencepanes.md).
+For the macOS Monterey version of this list, check that out [here](https://github.com/bvanpeski/SystemPreferences/blob/main/macos_preferencepanes.md).
 
 ### Table of Contents
 

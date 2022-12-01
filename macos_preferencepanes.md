@@ -123,18 +123,7 @@ osascript -e 'tell Application "System Preferences"' -e 'activate' -e 'set the c
 ```
 
 ## Passwords (com.apple.Passwords)
-URLScheme IS supported, but I couldn't figure it out. Applescript alternative below.
-
-```
-tell application "System Preferences"
-	activate
-	set the current pane to pane id "com.apple.Passwords"
-end tell
-```
-Bash-ready version:
-```
-osascript -e 'tell Application "System Preferences"' -e 'activate' -e 'set the current pane to pane id "com.apple.Passwords"' -e 'end tell'
-```
+`open "x-apple.systempreferences:com.apple.Passwords"`
 
 ## Wallet & Apple Pay (com.apple.preferences.wallet)
 `open "x-apple.systempreferences:com.apple.preferences.wallet"`

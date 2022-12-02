@@ -1,6 +1,8 @@
 # How to open every macOS System Preferences Pane
 
-Here is a complete list of System Preferences Panes (as of macOS Monterey 12.2.1) and how to open them with a bash command. Not all panes support a url scheme to open, but for those that do not you can use Applescript.
+Here is a complete list of System Preferences Panes (as of macOS Monterey 12.2.1) and how to open them with a bash command. Not all panes support a URLScheme to open, but for those that do not you can use Applescript.
+
+The macOS Ventura version of this list can be found [here](https://github.com/bvanpeski/SystemPreferences/blob/main/macos_preferencepanes-Ventura.md).
 
 ### Table of Contents
 

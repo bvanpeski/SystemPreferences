@@ -11,7 +11,7 @@ The macOS Ventura version of this list can be found [here](https://github.com/bv
 * [General](#general-comapplepreferencegeneral) | [Desktop & Screen Saver](#desktop--screensaver-comapplepreferencedesktopscreeneffect) | [Dock & Menu Bar](#dock--menu-bar-comapplepreferencedock) | [Mission Control](#mission-control-comapplepreferenceexpose) | [Siri](#siri-comapplepreferencespeech) | [Spotlight](#spotlight-comapplepreferencespotlight) | [Language & Region](#language--region-comapplelocalization) | [Notifications & Focus](#notifications--focus-comapplepreferencenotifications)
 * [Internet Accounts](#internet-accounts-comapplepreferencesinternetaccounts) | [Passwords](#passwords-comapplepasswords) | [Wallet & Apply Pay](#wallet--apple-pay-comapplepreferenceswallet) | [Users & Groups](#users--groups-comapplepreferencesusers) | [Accessibility](#accessibility-comapplepreferenceuniversalaccess) | [Screen Time](#screen-time-comapplepreferencescreentime) | [Extensions](#extensions-comapplepreferencesextensions) | [Security & Privacy](#security--privacy-comapplepreferencesecurity)
 * [Software Update](#software-update-comapplepreferencessoftwareupdate) | [Network](#network-comapplepreferencenetwork) | [Bluetooth](#bluetooth-comapplepreferencesbluetooth) | [Sound](#sound-comapplepreferencesound) | [Touch ID](#touch-id-comapplepreferencespassword) | [Keyboard](#keyboard-comapplepreferencekeyboard) | [Trackpad](#trackpad-comapplepreferencetrackpad) | [Mouse](#mouse-comapplepreferencemouse)
-* [Displays](#displays-comapplepreferencedisplays) | [Printers & Scanners](#printers--scanners-comapplepreferenceprintfax) | [Battery](#battery-comapplepreferencebattery) | [Date & Time](#date--time-comapplepreferencedatetime) | [Sharing](#sharing-comapplepreferencessharing) | [Time Machine](#time-machine-comappleprefsbackup) | [Startup Disk](#startup-disk-comapplepreferencestartupdisk) | [Profiles](#profiles-comapplepreferencesconfigurationprofiles)
+* [Displays](#displays-comapplepreferencedisplays) | [Printers & Scanners](#printers--scanners-comapplepreferenceprintfax) | [Battery](#battery-comapplepreferencebattery) | [Energy Saver](#energy-saver-comapplepreferencesenergysaverprefpane) | [Date & Time](#date--time-comapplepreferencedatetime) | [Sharing](#sharing-comapplepreferencessharing) | [Time Machine](#time-machine-comappleprefsbackup) | [Startup Disk](#startup-disk-comapplepreferencestartupdisk) | [Profiles](#profiles-comapplepreferencesconfigurationprofiles)
 
 
 **How To**
@@ -326,6 +326,9 @@ Primary Pane: `open "x-apple.systempreferences:com.apple.preference.battery"`
 * **Power Adapter:** `open "x-apple.systempreferences:com.apple.preference.battery?adapter"`
 * **Schedule:** `open "x-apple.systempreferences:com.apple.preference.battery?schedule"`
 * **Current Source (Either Battery or Power Adapter depending on current sournce):** `open "x-apple.systempreferences:com.apple.preference.battery?currentSource"`
+
+## Energy Saver (com.apple.preferences.EnergySaverPrefPane)
+`open "x-apple.systempreferences:com.apple.preferences.EnergySaverPrefPane"`
 
 ## Date & Time (com.apple.preference.datetime)
 URLScheme not supported. Applescript alternative below.

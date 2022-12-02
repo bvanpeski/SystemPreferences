@@ -15,7 +15,7 @@ More info can be found on the blog.
 * [Wi-Fi](#wi-fi) | [Bluetooth](#bluetooth) | [Network](#network)
 * [Notifications](#notifications) | [Sound](#sound) | [Focus](#focus) | [Screen Time](#screen-time)
 * [General](#general) | [Appearance](#appearance) | [Accessibility](#accessibility) | [Control Center](#control-center) | [Siri & Spotlight](s#iri--spotlight) | [Privacy & Security](#privacy--security)
-* [Desktop & Dock](#desktop--dock) | [Displays](#displays) | [Wallpaper](#wallpaper) | [Screen Saver](#screen-saver) | [Battery](#battery)
+* [Desktop & Dock](#desktop--dock) | [Displays](#displays) | [Wallpaper](#wallpaper) | [Screen Saver](#screen-saver) | [Battery](#battery) | [Energy Saver](#energy-saver)
 * [Lock Screen](#lock-screen) | [Touch ID & Password](#touch-id--password) | [Users & Groups](#users--groups)
 * [Passwords](#passwords) | [Internet Accounts](#internet-accounts) | [Game Center](#game-center) | [Wallet & Apple Pay](#wallet--apple-pay)
 * [Keyboard](#keyboard) | [Trackpad](#trackpad) | [Printers & Scanners](#printers--scanners)
@@ -161,6 +161,9 @@ Alternative: `open x-apple.systempreferences:com.apple.preference.security` (leg
 
 ## Battery
 `open x-apple.systempreferences:com.apple.Battery-Settings.extension`
+
+## Energy Saver
+`open "x-apple.systempreferences:com.apple.preferences.EnergySaverPrefPane"`
 
 <br>
 

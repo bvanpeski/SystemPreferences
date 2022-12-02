@@ -18,7 +18,7 @@ More info can be found on the blog.
 * [Desktop & Dock](#desktop--dock) | [Displays](#displays) | [Wallpaper](#wallpaper) | [Screen Saver](#screen-saver) | [Battery](#battery) | [Energy Saver](#energy-saver)
 * [Lock Screen](#lock-screen) | [Touch ID & Password](#touch-id--password) | [Users & Groups](#users--groups)
 * [Passwords](#passwords) | [Internet Accounts](#internet-accounts) | [Game Center](#game-center) | [Wallet & Apple Pay](#wallet--apple-pay)
-* [Keyboard](#keyboard) | [Trackpad](#trackpad) | [Printers & Scanners](#printers--scanners)
+* [Keyboard](#keyboard) | [Trackpad](#trackpad) | [Mouse](#mouse) | [Game Controller](#game-controller) | [CDs & DVDs](#cds--dvds) | [Printers & Scanners](#printers--scanners)
 
 **How To**
 * [How to find settings yourself](#finding-settings-sections)
@@ -108,6 +108,8 @@ Primary section:`open x-apple.systempreferences:com.apple.Accessibility-Settings
 
 ## Siri & Spotlight
 `open x-apple.systempreferences:com.apple.Siri-Settings.extension`
+
+`open x-apple.systempreferences:com.apple.Spotlight-Settings.extension`
 
 `open x-apple.systempreferences:com.apple.preference.speech` (legacy)
 
@@ -208,6 +210,12 @@ Alternative: `open x-apple.systempreferences:com.apple.preference.security` (leg
 
 ## Mouse
 `open x-apple.systempreferences:com.apple.Mouse-Settings.extension`
+
+## CDs & DVDs
+`open x-apple.systempreferences:com.apple.CD-DVD-Settings.extension`
+
+## Game Controller
+`open x-apple.systempreferences:com.apple.Game-Controller-Settings.extension`
 
 ## Printers & Scanners
 `open x-apple.systempreferences:com.apple.Print-Scan-Settings.extension`

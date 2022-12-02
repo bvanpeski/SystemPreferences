@@ -1,15 +1,17 @@
 # How to open every macOS System Settings Section (Ventura)
 
-Here is a complete list of System Settings Section (as of macOS Ventura 13.0.1) and how to open them with a bash command.
+Here is a complete list of System Settings Sections (as of macOS Ventura 13.0.1) and how to open them with a bash command.
 
-Ventura uses a new extension framework, but still supports some of the older prefpane calls. Who knows how long those will continue to work, but I've listed them here alongside their more modern counterparts to help identify calls you can use that might work across both Ventura AND Monterey if you have a mixed fleet.
+Ventura uses a new extension framework, but still supports some of the older prefpane calls. Who knows how long those will continue to work, but I've listed them here alongside their more modern counterparts to help identify calls that might work across both Ventura AND Monterey if you have a mixed fleet.
 
-For the macOS Monterey version of this list, check that out [here](https://github.com/bvanpeski/SystemPreferences/blob/main/macos_preferencepanes.md).
+You can find the macOS Monterey version of this list [here](https://github.com/bvanpeski/SystemPreferences/blob/main/macos_preferencepanes-Monterey.md).
+
+More info can be found on the blog.
 
 ### Table of Contents
 
 **System Settings Sections**
-* [Apple ID](#apple-id) | [Family](#family)
+* [Apple ID](#apple-id) | [Family Sharing](#family)
 * [Wi-Fi](#wi-fi) | [Bluetooth](#bluetooth) | [Network](#network)
 * [Notifications](#notifications) | [Sound](#sound) | [Focus](#focus) | [Screen Time](#screen-time)
 * [General](#general) | [Appearance](#appearance) | [Accessibility](#accessibility) | [Control Center](#control-center) | [Siri & Spotlight](s#iri--spotlight) | [Privacy & Security](#privacy--security)
@@ -22,7 +24,7 @@ For the macOS Monterey version of this list, check that out [here](https://githu
 * [How to find settings yourself](#finding-settings-sections)
 * [Troubleshooting](#troubleshooting)
 
-## System Preferences
+## System Settings
 `open x-apple.systempreferences:com.apple.preferences`
 
 ## Apple ID
@@ -114,8 +116,6 @@ Primary window: `open x-apple.systempreferences:com.apple.settings.PrivacySecuri
 
 Alternative: `open x-apple.systempreferences:com.apple.preference.security` (legacy)
 
-If you want to prompt the user to unlock any of the panes for editing, you can do so using `open "x-apple.systempreferences:com.apple.preference.security?Advanced"`
-
 * **Location Services:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_LocationServices"` or x-apple.systempreferences:com.apple.preference.security?Privacy_SystemServices
 * **Contacts:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Contacts"`
 * **Calendars**: `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Calendars"`
@@ -129,17 +129,19 @@ If you want to prompt the user to unlock any of the panes for editing, you can d
 * **Media & Apple Music:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Media" `
 * Files and Folders: 
 * **Full Disk Access:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_AllFiles"`
-* Focus:
+* **Focus:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Focus"`
 * **Accessibility:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Accessibility"`
 * **Input Monitoring:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_ListenEvent"`
 * **Screen Recording:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_ScreenCapture"`
 * **Automation:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Automation"`
 * App Management:
 * **Developer Tools:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_DevTools"`
-* Analytics & Improvements:
+* **Analytics & Improvements:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Analytics"`
 * **Apple Advertising:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Advertising"`
 * Extensions:
-* **Profiles:** `open x-apple.systempreferences:com.apple.Profiles-Settings.extension` OR `open “x-apple.systempreferences:com.apple.preferences.configurationprofiles”` (legacy)
+* **Profiles:** `open x-apple.systempreferences:com.apple.Profiles-Settings.extension`
+* **Profiles:** `open “x-apple.systempreferences:com.apple.preferences.configurationprofiles”` (legacy)
+* **Advanced button:** `open "x-apple.systempreferences:com.apple.preference.security?Advanced"`
 
 <br>
 
@@ -210,10 +212,9 @@ If you want to prompt the user to unlock any of the panes for editing, you can d
 <br>
 
 ## Finding Settings Sections
-Apple has made discovering the proper url extensions for different sections of the app much easier in Ventura, thanks to the unification of settings they've done in the new app. In fact, most of them are stored right inside of the System Settings app binary (`/System/Applications/System Settings.app/Contents/Resources/Sidebar.plist` You can combine those values in that plist with the `open x-apple-systempreferences:` command we all know and love and you're off to the races! If any new sections are added in the future, that plist is where you'd want to look.
+Apple has made discovering the proper URLScheme extensions for different sections of the app much easier in Ventura, thanks to the unification of settings that the new System Settings app brings. In fact, most of them are stored right inside of the System Settings application itself (`/System/Applications/System Settings.app/Contents/Resources/Sidebar.plist` You can combine the values in that plist with the `open x-apple-systempreferences:` command we all know and love and you're off to the races! If any new sections are added in the future, that plist is where you'll want to look.
 
 
 ## Troubleshooting
-* If the command does not open the window to the foreground, this was a bug that should have been resolved in macOS 13.0.1
-* Note that some panes start with `com.apple.preference.` and some start with `com.apple.preferences.`, why is that? I have no clue, but don't let it trip you up if you're hunting and guessing at panes.
-* This documentation is for macOS Ventura. System Settings saw a drastic change to how macOS preferences are handled in this version of macOS, so don't expect any of these to be backward compatible. If you're looking for commands for Monterey's System Preferences, I've documented those [here]([url](https://github.com/bvanpeski/SystemPreferences/blob/main/macos_preferencepanes.md))
+* If the command does not open the window to the foreground, this was a bug that was resolved in macOS 13.0.1
+* This documentation is for macOS Ventura. System Settings saw a drastic change to how macOS preferences are organized in this version of macOS, so don't expect any of these commands to be backwards compatible with previous versions of macOS . If you're looking for commands for Monterey's System Preferences, I've documented those [here](https://github.com/bvanpeski/SystemPreferences/blob/main/macos_preferencepanes-Monterey.md)

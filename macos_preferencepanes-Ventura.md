@@ -6,7 +6,7 @@ Ventura uses a new extension framework, but still supports some of the older pre
 
 You can find the macOS Monterey version of this list [here](https://github.com/bvanpeski/SystemPreferences/blob/main/macos_preferencepanes-Monterey.md).
 
-More info can be found on the blog.
+More info can be found on the [blog](https://www.macosadventures.com/2022/12/05/how-to-open-every-section-of-macos-ventura-system-settings/).
 
 ### Table of Contents
 

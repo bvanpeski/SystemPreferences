@@ -118,10 +118,10 @@ Primary window: `open x-apple.systempreferences:com.apple.settings.PrivacySecuri
 
 Alternative: `open x-apple.systempreferences:com.apple.preference.security` (legacy)
 
-* **Location Services:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_LocationServices"` or x-apple.systempreferences:com.apple.preference.security?Privacy_SystemServices
+* **Location Services:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_LocationServices"` or `x-apple.systempreferences:com.apple.preference.security?Privacy_SystemServices`
 * **Contacts:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Contacts"`
 * **Calendars**: `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Calendars"`
-* **Reminders:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Reminders"`x-apple.systempreferences:com.apple.preference.security?Privacy_RemindersPrivacy
+* **Reminders:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Reminders"`or `x-apple.systempreferences:com.apple.preference.security?Privacy_RemindersPrivacy`
 * **Photos:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Photos"`
 * **Bluetooth:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Bluetooth"`
 * **Microphone:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Microphone"`

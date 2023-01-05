@@ -18,7 +18,7 @@ More info can be found on the [blog](https://www.macosadventures.com/2022/12/05/
 * [Desktop & Dock](#desktop--dock) | [Displays](#displays) | [Wallpaper](#wallpaper) | [Screen Saver](#screen-saver) | [Battery](#battery) | [Energy Saver](#energy-saver)
 * [Lock Screen](#lock-screen) | [Touch ID & Password](#touch-id--password) | [Users & Groups](#users--groups)
 * [Passwords](#passwords) | [Internet Accounts](#internet-accounts) | [Game Center](#game-center) | [Wallet & Apple Pay](#wallet--apple-pay)
-* [Keyboard](#keyboard) | [Trackpad](#trackpad) | [Mouse](#mouse) | [Game Controller](#game-controller) | [CDs & DVDs](#cds--dvds) | [Printers & Scanners](#printers--scanners)
+* [Headphone](#headphone) | [Keyboard](#keyboard) | [Trackpad](#trackpad) | [Mouse](#mouse) | [Game Controller](#game-controller) | [CDs & DVDs](#cds--dvds) | [Printers & Scanners](#printers--scanners)
 
 **How To**
 * [How to find settings yourself](#finding-settings-sections)
@@ -140,7 +140,7 @@ Alternative: `open x-apple.systempreferences:com.apple.preference.security` (leg
 * **Developer Tools:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_DevTools"`
 * **Analytics & Improvements:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Analytics"`
 * **Apple Advertising:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Advertising"`
-* **Extensions:** `open "x-apple.systempreferences:com.apple.ExtensionsPreferences"`
+* **Extensions:** `open x-apple.systempreferences:com.apple.ExtensionsPreferences`
 * **Profiles:** `open x-apple.systempreferences:com.apple.Profiles-Settings.extension`
 * **Profiles:** `open “x-apple.systempreferences:com.apple.preferences.configurationprofiles”` (legacy)
 * **Advanced button:** `open "x-apple.systempreferences:com.apple.preference.security?Advanced"`

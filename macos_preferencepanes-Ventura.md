@@ -140,7 +140,7 @@ Alternative: `open x-apple.systempreferences:com.apple.preference.security` (leg
 * **Developer Tools:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_DevTools"`
 * **Analytics & Improvements:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Analytics"`
 * **Apple Advertising:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Advertising"`
-* Extensions:
+* **Extensions:** `open "x-apple.systempreferences:com.apple.ExtensionsPreferences"`
 * **Profiles:** `open x-apple.systempreferences:com.apple.Profiles-Settings.extension`
 * **Profiles:** `open “x-apple.systempreferences:com.apple.preferences.configurationprofiles”` (legacy)
 * **Advanced button:** `open "x-apple.systempreferences:com.apple.preference.security?Advanced"`
@@ -201,6 +201,9 @@ Alternative: `open x-apple.systempreferences:com.apple.preference.security` (leg
 `open x-apple.systempreferences:com.apple.WalletSettingsExtension`
 
 <br>
+
+## Headphone
+`open x-apple.systempreferences:com.apple.HeadphoneSettings`
 
 ## Keyboard
 `open x-apple.systempreferences:com.apple.Keyboard-Settings.extension`

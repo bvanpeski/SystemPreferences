@@ -228,7 +228,7 @@ Alternative: `open x-apple.systempreferences:com.apple.preference.security` (leg
 ## Finding Settings Sections
 Apple has made discovering the proper URLScheme extensions for different sections of the app much easier in Ventura, thanks to the unification of settings that the new System Settings app brings. In fact, most of them are stored right inside of the System Settings application itself (`/System/Applications/System Settings.app/Contents/Resources/Sidebar.plist` You can combine the values in that plist with the `open x-apple-systempreferences:` command we all know and love and you're off to the races! If any new sections are added in the future, that plist is where you'll want to look.
 
-There are a few deeper settings beyond the sidebar that won't be in that plist. To uncover those you can leverage a line of shellf script to pull a list of strings out of System Settings to identify any additional sections that you might have missed. `for pref in $(strings "/System/Applications/System Settings.app/Contents/MacOS/System Settings" | awk '/^com.apple./ {print $1 }'); do echo "$pref"; done` (hat tip to @bradtchapman in MacAdmin Slack for this one)
+There are a few deeper settings beyond the sidebar that won't be in that plist. To uncover those you can leverage a line of shell script to pull a list of strings out of System Settings to identify any additional sections that you might have missed. `for pref in $(strings "/System/Applications/System Settings.app/Contents/MacOS/System Settings" | awk '/^com.apple./ {print $1 }'); do echo "$pref"; done` (hat tip to @bradtchapman in MacAdmin Slack for this one)
 
 
 ## Troubleshooting

@@ -23,6 +23,7 @@ The macOS Ventura version of this list can be found [here](https://github.com/bv
 
 ## Apple ID (com.apple.preferences.AppleIDPrefPane)
 `open "x-apple.systempreferences:com.apple.preferences.AppleIDPrefPane"`
+
 `open "x-apple.systempreferences:com.apple.preferences.AppleIDPrefPane?iCloud"` (iCloud specific)
 
 ## Family Sharing (com.apple.preferences.FamilySharingPrefPane)

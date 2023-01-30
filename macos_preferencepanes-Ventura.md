@@ -32,6 +32,8 @@ More info can be found on the [blog](https://www.macosadventures.com/2022/12/05/
 
 `open x-apple.systempreferences:com.apple.preferences.AppleIDPrefPane` (legacy)
 
+`open "x-apple.systempreferences:com.apple.preferences.AppleIDPrefPane?iCloud"` (legacy)
+
 ## Family
 `open x-apple.systempreferences:com.apple.Family-Settings.extension`
 

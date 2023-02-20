@@ -2,7 +2,7 @@
 
 Here is a complete list of System Settings Sections (as of macOS Ventura 13.0.1) and how to open them with a bash command.
 
-Ventura uses a new extension framework, but still supports some of the older prefpane calls. Who knows how long those will continue to work, but I've listed them here alongside their more modern counterparts to help identify calls that might work across both Ventura AND Monterey if you have a mixed fleet.
+Ventura uses a new extension framework, but still supports some of the older prefpane calls. Who knows how long those will continue to work, but I've listed them here alongside their more modern counterparts to help identify calls that might work across both Ventura AND Monterey if you have a mixed fleet. Those items are noted by the `legacy` tag.
 
 You can find the macOS Monterey version of this list [here](https://github.com/bvanpeski/SystemPreferences/blob/main/macos_preferencepanes-Monterey.md).
 
@@ -32,10 +32,12 @@ More info can be found on the [blog](https://www.macosadventures.com/2022/12/05/
 
 `open x-apple.systempreferences:com.apple.preferences.AppleIDPrefPane` (legacy)
 
-`open "x-apple.systempreferences:com.apple.preferences.AppleIDPrefPane?iCloud"` (legacy)
+**iCloud Section:** `open "x-apple.systempreferences:com.apple.preferences.AppleIDPrefPane?iCloud"` (legacy)
 
 ## Family
 `open x-apple.systempreferences:com.apple.Family-Settings.extension`
+
+`open "x-apple.systempreferences:com.apple.preferences.FamilySharingPrefPane"` (legacy)
 
 ## Wi-Fi
 `open x-apple.systempreferences:com.apple.wifi-settings-extension`
@@ -73,7 +75,7 @@ More info can be found on the [blog](https://www.macosadventures.com/2022/12/05/
 <br>
 
 ## General
-Primary window: `open x-apple.systempreferences:com.apple.systempreferences.GeneralSettings`
+Primary section: `open x-apple.systempreferences:com.apple.systempreferences.GeneralSettings`
 * **About:** `open x-apple.systempreferences:com.apple.SystemProfiler.AboutExtension`
 * **Software Update:** `open x-apple.systempreferences:com.apple.Software-Update-Settings.extension`
 * **Storage:** `open x-apple.systempreferences:com.apple.settings.Storage`
@@ -84,13 +86,19 @@ Primary window: `open x-apple.systempreferences:com.apple.systempreferences.Gene
 * **Sharing:** `open x-apple.systempreferences:com.apple.Sharing-Settings.extension`
 * **Time Machine:** `open x-apple.systempreferences:com.apple.Time-Machine-Settings.extension`
 * **Transfer or Reset:** `open x-apple.systempreferences:com.apple.Transfer-Reset-Settings.extension`
-* **Startup Disk:** `open x-apple.systempreferences:com.apple.preference.startupdisk` or `open x-apple.systempreferences:com.apple.Startup-Disk-Settings.extension`
+* **Startup Disk:**
+  * `open x-apple.systempreferences:com.apple.Startup-Disk-Settings.extension` or
+  * `open x-apple.systempreferences:com.apple.preference.startupdisk`
 
 ## Appearance
 `open x-apple.systempreferences:com.apple.Appearance-Settings.extension`
 
 ## Accessibility
-Primary section:`open x-apple.systempreferences:com.apple.Accessibility-Settings.extension`
+Primary section:
+
+`open x-apple.systempreferences:com.apple.Accessibility-Settings.extension`
+
+`open "x-apple.systempreferences:com.apple.preference.universalaccess"` (legacy)
 * **Voice Over:** `open "x-apple.systempreferences:com.apple.preference.universalaccess?Seeing_VoiceOver"`
 * **Zoom:** `open "x-apple.systempreferences:com.apple.preference.universalaccess?Zoom"`
 * **Display:** `open "x-apple.systempreferences:com.apple.preference.universalaccess?Seeing_Display"`
@@ -116,14 +124,20 @@ Primary section:`open x-apple.systempreferences:com.apple.Accessibility-Settings
 `open x-apple.systempreferences:com.apple.preference.speech` (legacy)
 
 ## Privacy & Security
-Primary window: `open x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension`
+**Primary section:**
 
-Alternative: `open x-apple.systempreferences:com.apple.preference.security` (legacy)
+`open x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension`
 
-* **Location Services:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_LocationServices"` or `x-apple.systempreferences:com.apple.preference.security?Privacy_SystemServices`
+`open x-apple.systempreferences:com.apple.preference.security` (legacy)
+
+* **Location Services:**
+  * `open "x-apple.systempreferences:com.apple.preference.security?Privacy_LocationServices"` or
+  * `open "x-apple.systempreferences:com.apple.preference.security?Privacy_SystemServices"`
 * **Contacts:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Contacts"`
 * **Calendars**: `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Calendars"`
-* **Reminders:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Reminders"`or `x-apple.systempreferences:com.apple.preference.security?Privacy_RemindersPrivacy`
+* **Reminders:**
+  * `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Reminders"` or
+  * `open "x-apple.systempreferences:com.apple.preference.security?Privacy_RemindersPrivacy"`
 * **Photos:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Photos"`
 * **Bluetooth:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Bluetooth"`
 * **Microphone:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Microphone"`
@@ -143,8 +157,9 @@ Alternative: `open x-apple.systempreferences:com.apple.preference.security` (leg
 * **Analytics & Improvements:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Analytics"`
 * **Apple Advertising:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Advertising"`
 * **Extensions:** `open x-apple.systempreferences:com.apple.ExtensionsPreferences`
-* **Profiles:** `open x-apple.systempreferences:com.apple.Profiles-Settings.extension`
-* **Profiles:** `open “x-apple.systempreferences:com.apple.preferences.configurationprofiles”` (legacy)
+* **Profiles:**
+  * `open x-apple.systempreferences:com.apple.Profiles-Settings.extension`
+  * `open “x-apple.systempreferences:com.apple.preferences.configurationprofiles”` (legacy)
 * **Advanced button:** `open "x-apple.systempreferences:com.apple.preference.security?Advanced"`
 
 <br>
@@ -166,8 +181,11 @@ Alternative: `open x-apple.systempreferences:com.apple.preference.security` (leg
 ## Battery
 `open x-apple.systempreferences:com.apple.Battery-Settings.extension`
 
+`open "x-apple.systempreferences:com.apple.preference.battery"` (legacy)
+
 ## Energy Saver
 `open "x-apple.systempreferences:com.apple.preferences.EnergySaverPrefPane"`
+
 
 <br>
 
@@ -176,6 +194,8 @@ Alternative: `open x-apple.systempreferences:com.apple.preference.security` (leg
 
 ## Touch ID & Password
 `open x-apple.systempreferences:com.apple.Touch-ID-Settings.extension`
+
+`open x-apple.systempreferences:com.apple.preferences.password` (legacy)
 
 (Note: This section will be called **Login Password** on non-touch capable devices)
 
@@ -189,7 +209,7 @@ Alternative: `open x-apple.systempreferences:com.apple.preference.security` (leg
 ## Passwords
 `open x-apple.systempreferences:com.apple.Passwords-Settings.extension`
 
-`open x-apple.systempreferences:com.apple.preferences.password`
+`open "x-apple.systempreferences:com.apple.Passwords"` (legacy)
 
 ## Internet Accounts
 `open x-apple.systempreferences:com.apple.Internet-Accounts-Settings.extension`
@@ -201,6 +221,8 @@ Alternative: `open x-apple.systempreferences:com.apple.preference.security` (leg
 
 ## Wallet & Apple Pay
 `open x-apple.systempreferences:com.apple.WalletSettingsExtension`
+
+`open "x-apple.systempreferences:com.apple.preferences.wallet"` (legacy)
 
 <br>
 

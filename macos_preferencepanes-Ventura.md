@@ -1,8 +1,8 @@
-# How to open every macOS System Settings Section (Ventura)
+# How to open every macOS System Settings Section (Ventura and newer))
 
-Here is a complete list of System Settings Sections (as of macOS Ventura 13.0.1) and how to open them with a bash command.
+Here is a complete list of System Settings Sections (as of macOS Sonoma 14.0) and how to open them with a bash command.
 
-Ventura uses a new extension framework, but still supports some of the older prefpane calls. Who knows how long those will continue to work, but I've listed them here alongside their more modern counterparts to help identify calls that might work across both Ventura AND Monterey if you have a mixed fleet. Those items are noted by the `legacy` tag.
+macOS Ventura and newer operating systems uses a new extension framework, but still supports some of the older prefpane calls. Who knows how long those will continue to work, but I've listed them here alongside their more modern counterparts to help identify calls that might work across both Monterey and newer versions of macOS if you have a mixed fleet. Those items are noted by the `legacy` tag.
 
 You can find the macOS Monterey version of this list [here](https://github.com/bvanpeski/SystemPreferences/blob/main/macos_preferencepanes-Monterey.md).
 
@@ -159,7 +159,7 @@ Primary section:
 * **Extensions:** `open x-apple.systempreferences:com.apple.ExtensionsPreferences`
 * **Profiles:**
   * `open x-apple.systempreferences:com.apple.Profiles-Settings.extension`
-  * `open “x-apple.systempreferences:com.apple.preferences.configurationprofiles”` (legacy)
+  * `open x-apple.systempreferences:com.apple.preferences.configurationprofiles` (legacy)
 * **Advanced button:** `open "x-apple.systempreferences:com.apple.preference.security?Advanced"`
 
 <br>

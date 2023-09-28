@@ -1,8 +1,8 @@
-# How to open every macOS System Settings Section (Ventura and newer))
+# How to open every macOS System Settings Section (macOS 13+)
 
 Here is a complete list of System Settings Sections (as of macOS Sonoma 14.0) and how to open them with a bash command.
 
-macOS Ventura and newer operating systems uses a new extension framework, but still supports some of the older prefpane calls. Who knows how long those will continue to work, but I've listed them here alongside their more modern counterparts to help identify calls that might work across both Monterey and newer versions of macOS if you have a mixed fleet. Those items are noted by the `legacy` tag.
+macOS Ventura and newer operating systems use a new extension framework but still support some older prefpane calls. Who knows how long those will continue to work, but I've listed them here alongside their more modern counterparts to help identify calls that might work across both Monterey and newer versions of macOS if you have a mixed fleet. Those items are noted by the `legacy` tag.
 
 You can find the macOS Monterey version of this list [here](https://github.com/bvanpeski/SystemPreferences/blob/main/macos_preferencepanes-Monterey.md).
 

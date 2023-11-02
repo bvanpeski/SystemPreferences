@@ -1,5 +1,5 @@
 # System Preferences
-Collection of methods for activating parts of System Preferences / System Settings on macOS
+Collection of methods for activating parts of System Preferences / System Settings on macOS.
 
 ### [macOS 13 Ventura (and newer) System Settings](https://github.com/bvanpeski/SystemPreferences/blob/main/macos_preferencepanes-Ventura.md)
 

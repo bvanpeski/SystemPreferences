@@ -166,7 +166,7 @@ Primary section:
 * **Analytics & Improvements:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Analytics"`
 * **Apple Advertising:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Advertising"`
 * **FileVault:** `open "x-apple.systempreferences:com.apple.preference.security?FileVault"`
-* **LockdownMode:** `open "x-apple.systempreferences:com.apple.preference.security?LockdownMode"`
+* **Lockdown Mode:** `open "x-apple.systempreferences:com.apple.preference.security?LockdownMode"`
 * **Extensions:** `open x-apple.systempreferences:com.apple.ExtensionsPreferences`
 * **Profiles:**
   * `open x-apple.systempreferences:com.apple.Profiles-Settings.extension`

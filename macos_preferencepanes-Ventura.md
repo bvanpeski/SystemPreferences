@@ -1,6 +1,6 @@
 # How to open every macOS System Settings Section (macOS 13+)
 
-Here is a complete list of System Settings Sections (as of macOS Sonoma 14.0) and how to open them with a bash command.
+Here is a complete list of System Settings Sections (as of macOS Sonoma 14.2) and how to open them with a bash command.
 
 macOS Ventura and newer operating systems use a new extension framework but still support some older prefpane calls. Who knows how long those will continue to work, but I've listed them here alongside their more modern counterparts to help identify calls that might work across both Monterey and newer versions of macOS if you have a mixed fleet. Those items are noted by the `legacy` tag.
 
@@ -12,7 +12,7 @@ More info can be found on the [blog](https://www.macosadventures.com/2022/12/05/
 
 **System Settings Sections**
 * [Apple ID](#apple-id) | [Family Sharing](#family)
-* [Wi-Fi](#wi-fi) | [Bluetooth](#bluetooth) | [Network](#network)
+* [Wi-Fi](#wi-fi) | [Bluetooth](#bluetooth) | [Network](#network) | [VPN](#vpn)
 * [Notifications](#notifications) | [Sound](#sound) | [Focus](#focus) | [Screen Time](#screen-time)
 * [General](#general) | [Appearance](#appearance) | [Accessibility](#accessibility) | [Control Center](#control-center) | [Siri & Spotlight](s#iri--spotlight) | [Privacy & Security](#privacy--security)
 * [Desktop & Dock](#desktop--dock) | [Displays](#displays) | [Wallpaper](#wallpaper) | [Screen Saver](#screen-saver) | [Battery](#battery) | [Energy Saver](#energy-saver)
@@ -52,6 +52,9 @@ More info can be found on the [blog](https://www.macosadventures.com/2022/12/05/
 
 `open x-apple.systempreferences:com.apple.preference.network` (legacy)
 
+## VPN
+`open x-apple.systempreferences:com.apple.NetworkExtensionSettingsUI.NESettingsUIExtension`
+
 <br>
 
 ## Notifications
@@ -81,6 +84,7 @@ Primary section: `open x-apple.systempreferences:com.apple.systempreferences.Gen
 * **Storage:** `open x-apple.systempreferences:com.apple.settings.Storage`
 * **AirDrop & Handoff:** `open x-apple.systempreferences:com.apple.AirDrop-Handoff-Settings.extension`
 * **Login Items:** `open x-apple.systempreferences:com.apple.LoginItems-Settings.extension`
+* **AppleCare & Warranty:** `open x-apple.systempreferences:com.apple.Coverage-Settings.extension` (macOS14 Sonoma)
 * **Language & Region:** `open x-apple.systempreferences:com.apple.Localization-Settings.extension`
 * **Date & Time:** `open x-apple.systempreferences:com.apple.Date-Time-Settings.extension`
 * **Sharing:** `open x-apple.systempreferences:com.apple.Sharing-Settings.extension`
@@ -104,12 +108,17 @@ Primary section:
 * **Display:** `open "x-apple.systempreferences:com.apple.preference.universalaccess?Seeing_Display"`
 * **Spoken Content:** `open "x-apple.systempreferences:com.apple.preference.universalaccess?SpokenContent"`
 * **Descriptions:** `open "x-apple.systempreferences:com.apple.preference.universalaccess?Descriptions"`
+* **Hearing Devices:** `open "x-apple.systempreferences:com.apple.preference.universalaccess?Hearing"` (macOS14 Sonoma)
 * **Audio:** `open "x-apple.systempreferences:com.apple.preference.universalaccess?Audio"`
+* **RTT:** `open "x-apple.systempreferences:com.apple.preference.universalaccess?RTT"` (macOS 14 Sonoma)
 * **Captions:** `open "x-apple.systempreferences:com.apple.preference.universalaccess?Captions"`
+* **Live Captions:** `open "x-apple.systempreferences:com.apple.preference.universalaccess?LiveCaptions"`
 * **Voice Control:** `open "x-apple.systempreferences:com.apple.preference.universalaccess?VoiceControl"`
 * **Keyboard:** `open "x-apple.systempreferences:com.apple.preference.universalaccess?Keyboard"`
 * **Pointer Control:** `open "x-apple.systempreferences:com.apple.preference.universalaccess?Mouse"`
 * **Switch Control:** `open "x-apple.systempreferences:com.apple.preference.universalaccess?Switch"`
+* **Live Speech:** `open "x-apple.systempreferences:com.apple.preference.universalaccess?LiveSpeech"`
+* **Personal Voice:** `open "x-apple.systempreferences:com.apple.preference.universalaccess?PersonalVoice"` (macOS14 Sonoma)
 * **Siri:** `open "x-apple.systempreferences:com.apple.preference.universalaccess?Siri"`
 * **Shortcut:** `open "x-apple.systempreferences:com.apple.preference.universalaccess?Shortcut"`
 
@@ -142,20 +151,25 @@ Primary section:
 * **Bluetooth:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Bluetooth"`
 * **Microphone:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Microphone"`
 * **Camera:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Camera"`
+* **Motion & Fitness:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Motion"` (macOS14 Sonoma)
 * **HomeKit:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_HomeKit"`
 * **Speech Recognition:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_SpeechRecognition"`
-* **Media & Apple Music:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Media" `
-* Files and Folders: 
+* **Media & Apple Music:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Media"`
+* **Files and Folders:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_FilesAndFolders"`
 * **Full Disk Access:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_AllFiles"`
 * **Focus:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Focus"`
 * **Accessibility:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Accessibility"`
 * **Input Monitoring:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_ListenEvent"`
-* **Screen Recording:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_ScreenCapture"`
+* **Screen Recording:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_ScreenCapture"`(called Screen & System Audio Recording in macOS14 Sonoma)
+* **Passkeys Access for Web Browsers:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_PasskeyAccess"`
 * **Automation:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Automation"`
-* App Management:
+* **App Management:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_AppBundles"`
 * **Developer Tools:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_DevTools"`
+* **Sensitive Content Warning:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_NudityDetection"` (macOS14 Sonoma)
 * **Analytics & Improvements:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Analytics"`
 * **Apple Advertising:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Advertising"`
+* **FileVault:** `open "x-apple.systempreferences:com.apple.preference.security?FileVault"` (macOS14 Sonoma)
+* **Lockdown Mode:** `open "x-apple.systempreferences:com.apple.preference.security?LockdownMode"` (macOS14 Sonoma)
 * **Extensions:** `open x-apple.systempreferences:com.apple.ExtensionsPreferences`
 * **Profiles:**
   * `open x-apple.systempreferences:com.apple.Profiles-Settings.extension`
@@ -257,4 +271,4 @@ There are a few deeper settings beyond the sidebar that won't be in that plist. 
 
 ## Troubleshooting
 * If the command does not open the window to the foreground, this was a bug that was resolved in macOS 13.0.1
-* This documentation is for macOS Ventura. System Settings saw a drastic change to how macOS preferences are organized in this version of macOS, so don't expect any of these commands to be backwards compatible with previous versions of macOS . If you're looking for commands for Monterey's System Preferences, I've documented those [here](https://github.com/bvanpeski/SystemPreferences/blob/main/macos_preferencepanes-Monterey.md)
+* This documentation is for macOS Ventura and newer. System Settings saw a drastic change to how macOS preferences are organized in this version of macOS, so don't expect any of these commands to be backwards compatible with previous versions of macOS. If you're looking for commands for Monterey's System Preferences, I've documented those [here](https://github.com/bvanpeski/SystemPreferences/blob/main/macos_preferencepanes-Monterey.md)

@@ -118,7 +118,7 @@ Primary section:
 * **Pointer Control:** `open "x-apple.systempreferences:com.apple.preference.universalaccess?Mouse"`
 * **Switch Control:** `open "x-apple.systempreferences:com.apple.preference.universalaccess?Switch"`
 * **Live Speech:** `open "x-apple.systempreferences:com.apple.preference.universalaccess?LiveSpeech"`
-* **Personal Voice:** `open "x-apple.systempreferences:com.apple.preference.universalaccess?PersonalVoice"`
+* **Personal Voice:** `open "x-apple.systempreferences:com.apple.preference.universalaccess?PersonalVoice"` (macOS14 Sonoma)
 * **Siri:** `open "x-apple.systempreferences:com.apple.preference.universalaccess?Siri"`
 * **Shortcut:** `open "x-apple.systempreferences:com.apple.preference.universalaccess?Shortcut"`
 

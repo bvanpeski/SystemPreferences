@@ -161,7 +161,7 @@ Primary section:
 * **Accessibility:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Accessibility"`
 * **Input Monitoring:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_ListenEvent"`
 * **Screen Recording:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_ScreenCapture"`(called Screen & System Audio Recording in macOS14 Sonoma)
-* **Passkeys Access for Web Browsers:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_ScreenCapture"` (macOS14 Sonoma)
+* **Passkeys Access for Web Browsers:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_PasskeyAccess"`
 * **Automation:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Automation"`
 * **App Management:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_AppBundles"`
 * **Developer Tools:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_DevTools"`

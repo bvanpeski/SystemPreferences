@@ -168,8 +168,8 @@ Primary section:
 * **Sensitive Content Warning:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_NudityDetection"` (macOS14 Sonoma)
 * **Analytics & Improvements:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Analytics"`
 * **Apple Advertising:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Advertising"`
-* **FileVault:** `open "x-apple.systempreferences:com.apple.preference.security?FileVault"`
-* **Lockdown Mode:** `open "x-apple.systempreferences:com.apple.preference.security?LockdownMode"`
+* **FileVault:** `open "x-apple.systempreferences:com.apple.preference.security?FileVault"` (macOS14 Sonoma)
+* **Lockdown Mode:** `open "x-apple.systempreferences:com.apple.preference.security?LockdownMode"` (macOS14 Sonoma)
 * **Extensions:** `open x-apple.systempreferences:com.apple.ExtensionsPreferences`
 * **Profiles:**
   * `open x-apple.systempreferences:com.apple.Profiles-Settings.extension`

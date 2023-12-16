@@ -271,4 +271,4 @@ There are a few deeper settings beyond the sidebar that won't be in that plist. 
 
 ## Troubleshooting
 * If the command does not open the window to the foreground, this was a bug that was resolved in macOS 13.0.1
-* This documentation is for macOS Ventura. System Settings saw a drastic change to how macOS preferences are organized in this version of macOS, so don't expect any of these commands to be backwards compatible with previous versions of macOS . If you're looking for commands for Monterey's System Preferences, I've documented those [here](https://github.com/bvanpeski/SystemPreferences/blob/main/macos_preferencepanes-Monterey.md)
+* This documentation is for macOS Ventura and newer. System Settings saw a drastic change to how macOS preferences are organized in this version of macOS, so don't expect any of these commands to be backwards compatible with previous versions of macOS. If you're looking for commands for Monterey's System Preferences, I've documented those [here](https://github.com/bvanpeski/SystemPreferences/blob/main/macos_preferencepanes-Monterey.md)

@@ -12,7 +12,7 @@ More info can be found on the [blog](https://www.macosadventures.com/2022/12/05/
 
 **System Settings Sections**
 * [Apple ID](#apple-id) | [Family Sharing](#family)
-* [Wi-Fi](#wi-fi) | [Bluetooth](#bluetooth) | [Network](#network)
+* [Wi-Fi](#wi-fi) | [Bluetooth](#bluetooth) | [Network](#network) | [VPN](#vpn)
 * [Notifications](#notifications) | [Sound](#sound) | [Focus](#focus) | [Screen Time](#screen-time)
 * [General](#general) | [Appearance](#appearance) | [Accessibility](#accessibility) | [Control Center](#control-center) | [Siri & Spotlight](s#iri--spotlight) | [Privacy & Security](#privacy--security)
 * [Desktop & Dock](#desktop--dock) | [Displays](#displays) | [Wallpaper](#wallpaper) | [Screen Saver](#screen-saver) | [Battery](#battery) | [Energy Saver](#energy-saver)

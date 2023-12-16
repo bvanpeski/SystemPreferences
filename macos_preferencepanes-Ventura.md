@@ -52,6 +52,9 @@ More info can be found on the [blog](https://www.macosadventures.com/2022/12/05/
 
 `open x-apple.systempreferences:com.apple.preference.network` (legacy)
 
+## VPN
+`open x-apple.systempreferences:com.apple.NetworkExtensionSettingsUI.NESettingsUIExtension`
+
 <br>
 
 ## Notifications

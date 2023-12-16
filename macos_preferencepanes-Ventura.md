@@ -1,6 +1,6 @@
 # How to open every macOS System Settings Section (macOS 13+)
 
-Here is a complete list of System Settings Sections (as of macOS Sonoma 14.0) and how to open them with a bash command.
+Here is a complete list of System Settings Sections (as of macOS Sonoma 14.2) and how to open them with a bash command.
 
 macOS Ventura and newer operating systems use a new extension framework but still support some older prefpane calls. Who knows how long those will continue to work, but I've listed them here alongside their more modern counterparts to help identify calls that might work across both Monterey and newer versions of macOS if you have a mixed fleet. Those items are noted by the `legacy` tag.
 
@@ -81,6 +81,7 @@ Primary section: `open x-apple.systempreferences:com.apple.systempreferences.Gen
 * **Storage:** `open x-apple.systempreferences:com.apple.settings.Storage`
 * **AirDrop & Handoff:** `open x-apple.systempreferences:com.apple.AirDrop-Handoff-Settings.extension`
 * **Login Items:** `open x-apple.systempreferences:com.apple.LoginItems-Settings.extension`
+* **AppleCare & Warranty** `open x-apple.systempreferences:com.apple.Coverage-Settings.extension` (macOS14 Sonoma)
 * **Language & Region:** `open x-apple.systempreferences:com.apple.Localization-Settings.extension`
 * **Date & Time:** `open x-apple.systempreferences:com.apple.Date-Time-Settings.extension`
 * **Sharing:** `open x-apple.systempreferences:com.apple.Sharing-Settings.extension`

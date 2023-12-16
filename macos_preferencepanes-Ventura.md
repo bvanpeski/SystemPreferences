@@ -81,7 +81,7 @@ Primary section: `open x-apple.systempreferences:com.apple.systempreferences.Gen
 * **Storage:** `open x-apple.systempreferences:com.apple.settings.Storage`
 * **AirDrop & Handoff:** `open x-apple.systempreferences:com.apple.AirDrop-Handoff-Settings.extension`
 * **Login Items:** `open x-apple.systempreferences:com.apple.LoginItems-Settings.extension`
-* **AppleCare & Warranty** `open x-apple.systempreferences:com.apple.Coverage-Settings.extension` (macOS14 Sonoma)
+* **AppleCare & Warranty:** `open x-apple.systempreferences:com.apple.Coverage-Settings.extension` (macOS14 Sonoma)
 * **Language & Region:** `open x-apple.systempreferences:com.apple.Localization-Settings.extension`
 * **Date & Time:** `open x-apple.systempreferences:com.apple.Date-Time-Settings.extension`
 * **Sharing:** `open x-apple.systempreferences:com.apple.Sharing-Settings.extension`
@@ -105,12 +105,17 @@ Primary section:
 * **Display:** `open "x-apple.systempreferences:com.apple.preference.universalaccess?Seeing_Display"`
 * **Spoken Content:** `open "x-apple.systempreferences:com.apple.preference.universalaccess?SpokenContent"`
 * **Descriptions:** `open "x-apple.systempreferences:com.apple.preference.universalaccess?Descriptions"`
+* **Hearing Devices:** `open "x-apple.systempreferences:com.apple.preference.universalaccess?Hearing"` (macOS14 Sonoma)
 * **Audio:** `open "x-apple.systempreferences:com.apple.preference.universalaccess?Audio"`
+* **RTT:** `open "x-apple.systempreferences:com.apple.preference.universalaccess?RTT"` (macOS 14 Sonoma)
 * **Captions:** `open "x-apple.systempreferences:com.apple.preference.universalaccess?Captions"`
+* **Live Captions:** `open "x-apple.systempreferences:com.apple.preference.universalaccess?LiveCaptions"`
 * **Voice Control:** `open "x-apple.systempreferences:com.apple.preference.universalaccess?VoiceControl"`
 * **Keyboard:** `open "x-apple.systempreferences:com.apple.preference.universalaccess?Keyboard"`
 * **Pointer Control:** `open "x-apple.systempreferences:com.apple.preference.universalaccess?Mouse"`
 * **Switch Control:** `open "x-apple.systempreferences:com.apple.preference.universalaccess?Switch"`
+* **Live Speech:** `open "x-apple.systempreferences:com.apple.preference.universalaccess?LiveSpeech"`
+* **Personal Voice:** `open "x-apple.systempreferences:com.apple.preference.universalaccess?PersonalVoice"`
 * **Siri:** `open "x-apple.systempreferences:com.apple.preference.universalaccess?Siri"`
 * **Shortcut:** `open "x-apple.systempreferences:com.apple.preference.universalaccess?Shortcut"`
 
@@ -143,20 +148,25 @@ Primary section:
 * **Bluetooth:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Bluetooth"`
 * **Microphone:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Microphone"`
 * **Camera:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Camera"`
+* **Motion & Fitness:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Motion"` (macOS14 Sonoma)
 * **HomeKit:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_HomeKit"`
 * **Speech Recognition:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_SpeechRecognition"`
-* **Media & Apple Music:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Media" `
-* Files and Folders: 
+* **Media & Apple Music:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Media"`
+* **Files and Folders:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_FilesAndFolders"`
 * **Full Disk Access:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_AllFiles"`
 * **Focus:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Focus"`
 * **Accessibility:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Accessibility"`
 * **Input Monitoring:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_ListenEvent"`
-* **Screen Recording:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_ScreenCapture"`
+* **Screen Recording:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_ScreenCapture"`(called Screen & System Audio Recording in macOS14 Sonoma)
+* **Passkeys Access for Web Browsers:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_ScreenCapture"` (macOS14 Sonoma)
 * **Automation:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Automation"`
-* App Management:
+* **App Management:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_AppBundles"`
 * **Developer Tools:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_DevTools"`
+* **Sensitive Content Warning:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_NudityDetection"` (macOS14 Sonoma)
 * **Analytics & Improvements:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Analytics"`
 * **Apple Advertising:** `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Advertising"`
+* **FileVault:** `open "x-apple.systempreferences:com.apple.preference.security?FileVault"`
+* **LockdownMode:** `open "x-apple.systempreferences:com.apple.preference.security?LockdownMode"`
 * **Extensions:** `open x-apple.systempreferences:com.apple.ExtensionsPreferences`
 * **Profiles:**
   * `open x-apple.systempreferences:com.apple.Profiles-Settings.extension`

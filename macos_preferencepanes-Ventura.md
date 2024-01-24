@@ -1,4 +1,5 @@
 # How to open every macOS System Settings Section (macOS 13+)
+<img width="1200" alt="macOS Ventura and Sonoma System Settings header image" src="/images/settings_ventura-and-newer.png">
 
 Here is a complete list of System Settings Sections (as of macOS Sonoma 14.2) and how to open them with a bash command.
 

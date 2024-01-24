@@ -2,6 +2,7 @@
 Collection of methods for activating parts of System Preferences / System Settings on macOS.
 
 
-### [macOS 13 Ventura (and newer) System Settings](macos_preferencepanes-Ventura.md)
+<a href=macos_preferencepanes-Ventura.md><img width="1200" alt="sonoma_settings" src="/images/settings_ventura-and-newer.png"></a>
 
-### [macOS 12 Monterey (and earlier) System Preferences](macos_preferencepanes-Monterey.md)
+
+<a href=macos_preferencepanes-Monterey.md><img width="1200" alt="sonoma_settings" src="/images/settings_monterey-and-older.png"></a>

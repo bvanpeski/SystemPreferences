@@ -1,5 +1,5 @@
 # How to open every macOS System Preferences Pane
-<img width="1200" alt="monterey_settings" src="/images/settings_monterey-and-older.png">
+<img width="1200" alt="macOS Montereay System Preferences header image" src="/images/settings_monterey-and-older.png">
 
 Here is a complete list of System Preferences Panes (as of macOS Monterey 12.2.1) and how to open them with a bash command. Not all panes support a URLScheme to open, but for those that do not you can use Applescript.
 

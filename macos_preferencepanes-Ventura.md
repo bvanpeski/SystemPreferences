@@ -10,7 +10,7 @@ You can find the macOS Monterey version of this list [here](https://github.com/b
 More info can be found on the [blog](https://www.macosadventures.com/2022/12/05/how-to-open-every-section-of-macos-ventura-system-settings/).
 
 >[!NOTE]
->While running these commands as-is should work most of the time, there are some instances and contexts where the commands will fail when running as root via MDM. To avoid this, you can run these commands as the currently logged in user. Armin Briegel has a [handy function](https://scriptingosx.com/2020/08/running-a-command-as-another-user/) that you can incorporate into your scripts. If you put his runAsUser function in your scripts, you run the open commands as the currently logged in user like this: `runAsUser open "open x-apple.systempreferences:com.apple.preferences"`
+>While running these commands as-is should work most of the time, there are some instances and contexts where the commands will fail when running as root via MDM. To avoid this, you can run these commands as the currently logged in user. Armin Briegel has a [handy function](https://scriptingosx.com/2020/08/running-a-command-as-another-user/) that you can incorporate into your scripts. If you put his runAsUser function in your scripts, you run the open commands as the currently logged in user like this: `runAsUser open "x-apple.systempreferences:com.apple.preferences"`
 
 ### Table of Contents
 
